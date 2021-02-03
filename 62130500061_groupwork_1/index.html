@@ -1,0 +1,750 @@
+<!-- 62130500061 Pacharaporn Kamsanong -->
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBTOON - Read Comics Online</title>
+
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+  <!-- Using via Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- https://tailwindcss.com/docs/installation -->
+  <!-- Using Tailwind via CDN -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<body>
+
+  <!-- nav bar -->
+  <nav class="flex items-center justify-between flex-wrap bg-white xl:ml-28 xl:mr-32 lg:mx-0">
+
+    <!-- Icon Webtoon -->
+    <div class="class=flex items-center flex-shrink-0 text-white mr-6 mt-0 ml-2">
+      <button class="bg-white">
+        <img class="h-24 w-24" src="images/icon_logo.png" alt="iconWebtoon">
+      </button>
+    </div>
+
+    <!-- Menu bar (left)-->
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+
+      <div class="text-sm lg:flex-grow">
+        <a href="#"
+          class="pr-4 block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg font-medium uppercase hover:text-green-400 text-lg">ORIGINALS</a>
+        <a href="#"
+          class="pr-4 block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg font-medium uppercase hover:text-green-400 text-lg">genres</a>
+        <a href="#"
+          class="pr-4 block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg font-medium uppercase hover:text-green-400 text-lg">popular</a>
+        <a href="#"
+          class="pr-4 block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg font-medium uppercase hover:text-green-400 text-lg">canvas</a>
+      </div>
+
+      <!-- Menu bar (right)-->
+      <div>
+
+        <div class="inline-block">
+          <a href="#" class="inline-block flex-shrink-0 absolute items-center pt-2">
+            <img class="h-5 w-5" src="images/icon_book.png" alt="iconBook"></a>
+          <a href="#"
+            class="inline-block text-base px-6 py-1.5 text-black mt-4 lg:mt-0 hover:text-green-400">Creators101</a>
+        </div>
+
+        <div class="pr-5 inline-block">
+          <a href="#"
+            class="inline-block text-sm px-7 py-1.5 mt-4 lg:mt-0 bg-gray-800 border border-gray-800 rounded-full text-white hover:text-white hover:bg-black">
+            Publish</a>
+          <a href="#"
+            class="inline-block text-sm px-8 py-1.5 mt-4 lg:mt-0 bg-white border border-gray-300 rounded-full text-gray-500">
+            Log In</a>
+        </div>
+
+        <a href="#" class="flex-shrink-0 absolute inline-block items-center">
+          <div class="rounded-full border border-gray-300 px-2.5 py-2.5">
+            <img class="h-3 w-3 " src="images/icon_search.png" alt="iconSearch">
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Wallpaper Home -->
+  <div class="mx-auto " style="background: url('images/background.jpg')" width="1000">
+    <a href="#">
+      <img class="wallpaper mx-auto" src="images/trueBeauty.jpeg" width="1000"></a>
+    <a href="#">
+      <img class="wallpaper mx-auto" src="images/Romance.png" width="1000"></a>
+    <img class="wallpaper mx-auto" src="images/lookism.jpg" width="900">
+  </div>
+
+
+  <!-- Days -->
+  <div class="flex justify-center">
+    <a href="#" class="text-black px-10 py-5 text-lg font-medium uppercase hover:text-green-400 ">mon</a>
+    <a href="#" class="text-black px-10 py-5 text-lg font-medium uppercase hover:text-green-400 ">tue</a>
+    <a href="#" class="text-white px-10 py-5 text-lg font-medium uppercase bg-green-400 ">wed</a>
+    <a href="#" class="text-black px-10 py-5 text-lg font-medium uppercase hover:text-green-400 ">thu</a>
+    <a href="#" class="text-black px-10 py-5 text-lg font-medium uppercase hover:text-green-400 ">fri</a>
+    <a href="#" class="text-black px-10 py-5 text-lg font-medium uppercase hover:text-green-400 ">sat</a>
+    <a href="#" class="text-black px-10 py-5 text-lg font-medium uppercase hover:text-green-400 ">sun</a>
+    <a href="#" class="text-gray-500 pl-24 pr-0 py-5 text-lg font-medium uppercase hover:text-green-400 ">more</a>
+  </div>
+
+
+  <!-- list 1 -->
+  <div class="inline-block mx-auto flex justify-center bg-gray-100">
+
+    <!-- True Beaut -->
+    <a href="#">
+      <div class="w-52 h-52 mt-8 inline-block" style="background: url('images/trueBeauty.jpg')">
+        <div class="px-4 py-3 hover:bg-pink-500 group">
+
+          <p class="font-medium text-lg group-hover:text-pink-500">True Beauty</p>
+          <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+          <p class="text-sm inline-block text-green-400 group-hover:text-pink-500">32.2M</p>
+          <p class="font-thin text-sm pt-28 text-red-400 group-hover:text-pink-500">Romance</p>
+
+        </div>
+      </div>
+    </a>
+
+    <!-- The Remarriried -->
+    <a href="#">
+      <div class="w-52 h-52 ml-3 mt-8 inline-block" style="background: url('images/theRemarriried.jpg')">
+        <div class="px-4 py-3 hover:bg-purple-500 group">
+
+          <p class="font-medium text-lg group-hover:text-purple-500">The Remarriried</p>
+          <p class="font-medium text-lg group-hover:text-purple-500">Empress</p>
+          <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+          <p class="text-sm inline-block text-green-400 group-hover:text-purple-500">5.5M</p>
+          <p class="font-thin text-sm pt-20 pb-1 text-purple-700 group-hover:text-purple-500">Fantasy</p>
+
+        </div>
+      </div>
+    </a>
+
+    <!-- Age Matters -->
+    <a href="#">
+      <div class="w-52 h-52 ml-3 mt-8 inline-block" style="background: url('images/ageMatters.png')">
+        <div class="px-4 py-3 hover:bg-pink-500 group">
+
+          <p class="font-medium text-lg group-hover:text-pink-500">Age Matters</p>
+          <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+          <p class="text-sm inline-block text-green-400 group-hover:text-pink-500">19.3M</p>
+          <p class="font-thin text-sm pt-28 text-red-400 group-hover:text-pink-500">Romance</p>
+
+        </div>
+      </div>
+    </a>
+
+    <!-- Omniscient Reader -->
+    <a href="#">
+      <div class="w-52 h-52 ml-3 mt-8 inline-block" style="background: url('images/omniscient.jpg')">
+        <div class="px-4 py-3 hover:bg-purple-500 group">
+
+          <p class="font-medium text-lg group-hover:text-purple-500">Omniscient Reader</p>
+          <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+          <p class="text-sm inline-block text-green-400 group-hover:text-purple-500">2.9M</p>
+          <p class="font-thin text-sm pt-28 text-purple-700 group-hover:text-purple-500">Fantasy</p>
+
+        </div>
+      </div>
+    </a>
+
+    <!-- Love Me Knot -->
+    <a href="#">
+      <div class="w-52 h-52 ml-3 mt-8 inline-block" style="background: url('images/loveme.jpg')">
+        <div class="px-4 py-3 hover:bg-pink-500 group">
+
+          <p class="font-medium text-lg group-hover:text-pink-500">Love Me Knot</p>
+          <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+          <p class="text-sm inline-block text-green-400 group-hover:text-pink-500">1.7M</p>
+          <p class="font-thin text-sm pt-28 text-red-400 group-hover:text-pink-500">Romance</p>
+
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+
+  <!-- list 2 -->
+  <div class="inline-block mx-auto flex justify-center bg-gray-100 pb-20 border-b-2 border-fuchsia-600 border-gray-200">
+
+    <!-- Your Throne -->
+    <a href="#">
+      <div class="w-96 h-52 ml-11 mt-4 inline-block" style="background: url('images/yourThrone.png')">
+        <div class="px-4 py-3 hover:bg-purple-500 group">
+
+          <p class="font-medium text-lg text-gray-100 group-hover:text-purple-500">Your Throner</p>
+          <p class="font-medium text-sm text-gray-100 group-hover:text-purple-500">Tensions are brewing under</p>
+          <p class="font-medium text-sm text-gray-100 group-hover:text-purple-500">the seemingly calm</p>
+          <p class="font-medium text-sm text-gray-100 group-hover:text-purple-500">surface of the Vasilios E...</p>
+          <p class="font-thin text-sm pt-20 text-purple-700 group-hover:text-purple-500">Fantasy</p>
+
+        </div>
+      </div>
+    </a>
+
+    <!-- Phase -->
+    <a href="#">
+      <div class="w-52 h-52 ml-3 mt-4 inline-block" style="background: url('images/phase.jpg')">
+        <div class="px-4 py-3 hover:bg-pink-500 group">
+
+          <p class="font-medium text-lg group-hover:text-pink-500">Phase</p>
+          <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+          <p class="text-sm inline-block text-green-400 group-hover:text-pink-500">2M</p>
+          <p class="font-thin text-sm pt-28 text-red-400 group-hover:text-pink-500">Romance</p>
+
+        </div>
+      </div>
+    </a>
+
+    <!-- My Giant Nerd -->
+    <a href="#">
+      <div class="w-52 h-52 ml-3 mt-4 inline-block" style="background: url('images/myGiant.jpg')">
+        <div class="px-4 py-3 hover:bg-green-500 group">
+
+          <p class="font-medium text-lg group-hover:text-green-500">My Giant Nerd</p>
+          <p class="font-medium text-lg group-hover:text-green-500">Boyfriend</p>
+          <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+          <p class="text-sm inline-block text-green-400 group-hover:text-green-500">42.1M</p>
+          <p class="font-thin text-sm pt-20 pb-1 text-green-500 group-hover:text-green-500">Slice of life</p>
+
+        </div>
+      </div>
+    </a>
+
+    <!-- In the Bleak -->
+    <a href="#">
+      <div class="w-52 h-52 ml-3 mt-4 inline-block" style="background: url('images/midwinter.jpg')">
+        <div class="px-4 py-3 hover:bg-gray-700 group">
+
+          <p class="font-medium text-lg group-hover:text-gray-700">In the Bleak</p>
+          <p class="font-medium text-lg group-hover:text-gray-700">Midwinter</p>
+          <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+          <p class="text-sm inline-block text-green-400 group-hover:text-gray-700">2.2M</p>
+          <p class="font-thin text-sm pt-20 pb-1 text-gray-700 group-hover:text-gray-700">Sci-fie</p>
+
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+
+  <!-- New to WEBTOON -->
+  <div class="bg-gray-100 pb-12 border-b-2 border-fuchsia-600 border-gray-200">
+
+    <div class="mx-auto pt-12 bg-gray-100">
+
+      <div class="font-medium text-xl mx-auto flex justify-center ">New to WEBTOON</div>
+
+      <div class="inline-block mx-auto flex justify-center">
+
+        <!-- Next Button -->
+        <a href="#">
+          <div class="inline-block px-4 pt-28">
+            <img class="h-5.5 w-6 inline-block opacity-50" src="images/button_back.png" alt="heart">
+          </div>
+        </a>
+
+        <!-- Death's Game -->
+        <a href="#">
+          <div class="w-52 h-52 ml-9 mt-7 inline-block" style="background: url('images/death.jpg')">
+            <div class="px-4 py-3 hover:bg-indigo-400 group">
+
+              <p class="font-medium text-lg group-hover:text-indigo-400">Death's Game</p>
+              <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+              <p class="text-sm inline-block text-green-400 group-hover:text-indigo-400 pb-8">482,908</p>
+              <p class="font-thin text-sm pt-20 pb-1 text-indigo-400 group-hover:text-indigo-400">Drama</p>
+
+            </div>
+          </div>
+        </a>
+
+        <!-- Romance 101 -->
+        <a href="#">
+          <div class="w-52 h-52 ml-3 mt-7 inline-block" style="background: url('images/romance.jpg')">
+            <div class="px-4 py-3 hover:bg-red-400 group">
+
+              <p class="font-medium text-lg group-hover:text-red-400">Romance 101</p>
+              <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+              <p class="text-sm inline-block text-green-400 group-hover:text-red-400 pb-8">95,764</p>
+              <p class="font-thin text-sm pt-20 pb-1 text-red-400 group-hover:text-red-400">Romance</p>
+
+            </div>
+          </div>
+        </a>
+
+        <!-- unYouchabl -->
+        <a href="#">
+          <div class="w-52 h-52 ml-3 mt-7 inline-block" style="background: url('images/unYouchable.png')">
+            <div class="px-4 py-3 hover:bg-green-500 group">
+
+              <p class="font-medium text-lg group-hover:text-green-500">unYouchable</p>
+              <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+              <p class="text-sm inline-block text-green-400 group-hover:text-green-500">5.5M</p>
+              <p class="font-thin text-sm pt-28 text-green-500 group-hover:text-green-500">Supernatural</p>
+
+            </div>
+          </div>
+        </a>
+
+        <!-- Down To Earthe -->
+        <a href="#">
+          <div class="w-96 h-52 ml-3 mt-7 inline-block" style="background: url('images/downTo.png')">
+            <div class="px-4 py-3 hover:bg-red-400 group">
+
+              <p class="font-medium text-sm text-white group-hover:text-red-400">unYouchable</p>
+              <p class="font-medium text-sm text-white group-hover:text-red-400">Kade lives his average</p>
+              <p class="font-medium text-sm text-white group-hover:text-red-400">life alone and undisturbed,</p>
+              <p class="font-medium text-sm text-white group-hover:text-red-400">until a cute alien girl c...</p>
+              <p class="text-sm inline-block text-green-400 group-hover:text-red-400">5.5M</p>
+              <p class="font-thin text-sm pt-16 text-red-400 group-hover:text-red-400">Supernatural</p>
+
+            </div>
+          </div>
+        </a>
+
+        <!-- Next Button -->
+        <a href="#">
+          <div class="inline-block pl-10 pt-28">
+            <img class="h-5.5 w-6 inline-block opacity-50" src="images/button_next.png" alt="heart">
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- 3 dot -->
+    <div class="flex justify-center mx-auto pt-6">
+      <a href="#" class="pr-2"> <span class="w-2.5 h-2.5 bg-gray-400 rounded-full inline-block"> </span></a>
+      <a href="#" class="pr-2"> <span class="w-2.5 h-2.5 bg-gray-400 rounded-full inline-block"> </span></a>
+      <a href="#" class="pr-2"> <span class="w-2.5 h-2.5 bg-gray-400 rounded-full inline-block"> </span></a>
+    </div>
+
+  </div>
+
+
+  <!-- GENERS -->
+  <div class="bg-gray-100 pb-20">
+
+    <div class="inline-block mx-auto flex justify-center">
+      <div class="mx-auto pt-12 bg-gray-100">
+
+        <a href="#" class="flex justify-center font-medium text-xl">
+          <div class="font-medium text-xl"> GENRES
+            <img class="h-4 w-4 inline-block" src="images/icon_next.png" alt="heart">
+          </div>
+        </a>
+
+        <!-- list 1 -->
+        <div class="inline-block mx-auto flex justify-center">
+
+          <!-- Sports -->
+          <div class="w-52 h-52 ml-3 mt-7 inline-block bg-blue-500">
+            <a href="#">
+              <div class="px-4 py-3">
+                <div class="font-medium text-lg text-white inline-block">Sports
+                  <span class="font-medium text-lg text-white inline-block pl-24"> > </span>
+                </div>
+                <div class="font-medium text-sm pt-28 text-white inline-block">Feel the pumped-up</div>
+                <div class="font-medium text-sm pt-30 text-white inline-block">energy.</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Wind Breaker -->
+          <a href="#">
+            <div class="w-52 h-52 ml-3 mt-7 inline-block" style="background: url('images/windBreaker.jpg')">
+              <div class="px-4 py-3 hover:bg-blue-500 group">
+
+                <p class="font-medium text-lg group-hover:text-blue-500">Wind Breaker</p>
+                <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+                <p class="text-sm inline-block text-green-400 pb-32 pt-2 group-hover:text-blue-500">5.7M</p>
+
+              </div>
+            </div>
+          </a>
+
+          <!-- The Boxer -->
+          <a href="#">
+            <div class="w-52 h-52 ml-3 mt-7 inline-block" style="background: url('images/theBoxer.jpg')">
+              <div class="px-4 py-3 hover:bg-blue-500 group">
+
+                <p class="font-medium text-lg group-hover:text-blue-500">The Boxer</p>
+                <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+                <p class="text-sm inline-block text-green-400 pb-32 pt-2 group-hover:text-blue-500">4M</p>
+
+              </div>
+            </div>
+          </a>
+
+          <!-- Ecstary Hearts -->
+          <a href="#">
+            <div class="w-52 h-52 ml-3 mt-7 inline-block" style="background: url('images/ecstasy.jpg')">
+              <div class="px-4 py-3 hover:bg-blue-500 group">
+
+                <p class="font-medium text-lg group-hover:text-blue-500">Ecstary Hearts</p>
+                <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+                <p class="text-sm inline-block text-green-400 pb-32 pt-2 group-hover:text-blue-500">4.3M</p>
+
+              </div>
+            </div>
+          </a>
+
+          <!-- Just For Kicks -->
+          <a href="#">
+            <div class="w-52 h-52 ml-3 mt-7 inline-block" style="background: url('images/justForKicks.png')">
+              <div class="px-4 py-3 hover:bg-blue-500 group">
+
+                <p class="font-medium text-lg group-hover:text-blue-500">Just For Kicks</p>
+                <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+                <p class="text-sm inline-block text-green-400 pb-32 pt-2 group-hover:text-blue-500">2.4M</p>
+
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- list 2 -->
+    <div class="inline-block mx-auto flex justify-center">
+
+      <a href="#">
+        <div class="w-52 h-52 ml-3 mt-4 inline-block bg-red-700">
+          <div class="px-4 py-3">
+
+            <div class="font-medium text-lg text-white inline-block">Horror
+              <span class="font-medium text-lg text-white inline-block pl-24"> > </span>
+            </div>
+            <div class="font-medium text-sm pt-28 text-white">Do you love being</div>
+            <div class="font-medium text-sm pt-30 text-white">scared?</div>
+
+          </div>
+        </div>
+      </a>
+
+      <!-- Sweet Home -->
+      <a href="#">
+        <div class="w-52 h-52 ml-3 mt-4 inline-block" style="background: url('images/sweetHome.jpg')">
+          <div class="px-4 py-3 hover:bg-red-700 group">
+
+            <p class="font-medium text-lg group-hover:text-red-700">Sweet Home</p>
+            <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+            <p class="text-sm inline-block text-green-400 pb-32 pt-2 group-hover:text-red-700">15.4M</p>
+
+          </div>
+        </div>
+      </a>
+
+      <!-- Elena -->
+      <a href="#">
+        <div class="w-52 h-52 ml-3 mt-4 inline-block" style="background: url('images/elena.jpg')">
+          <div class="px-4 py-3 hover:bg-red-700 group">
+
+            <p class="font-medium text-lg group-hover:text-red-700">Elena</p>
+            <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+            <p class="text-sm inline-block text-green-400 pb-32 pt-2 group-hover:text-red-700">186,356</p>
+
+          </div>
+        </div>
+      </a>
+
+      <!-- Rot & Ruin -->
+      <a href="#">
+        <div class="w-52 h-52 ml-3 mt-4 inline-block" style="background: url('images/rotRuin.jpg')">
+          <div class="px-4 py-3 hover:bg-red-700 group">
+
+            <p class="font-medium text-lg group-hover:text-red-700">Rot & Ruin</p>
+            <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+            <p class="text-sm inline-block text-green-400 pb-32 pt-2 group-hover:text-red-700">1.3M</p>
+
+          </div>
+        </div>
+      </a>
+
+      <!-- Ghost Teller -->
+      <a href="#">
+        <div class="w-52 h-52 ml-3 mt-4 inline-block" style="background: url('images/ghost.png')">
+          <div class="px-4 py-3 hover:bg-red-700 group">
+
+            <p class="font-medium text-lg group-hover:text-red-700">Ghost Teller</p>
+            <img class="h-3.5 w-4 inline-block group-hover:opacity-0" src="images/icon_heart.png" alt="heart">
+            <p class="text-sm inline-block text-green-400 pb-32 pt-2 group-hover:text-red-700">4.7M</p>
+
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  
+  <!-- Line List -->
+  <div class="flex justify-center border-b-2 border-fuchsia-600 border-gray-200 pb-20">
+
+    <!-- Line List 1-->
+    <div class="pt-14 inline-block">
+
+      <!-- Most Popular by Genre -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100 pb-4">
+        <a href="#" class="mx-auto">
+          <p class="font-medium text-xl">Most Popular by Genre
+            <img class="h-4 w-4 inline-block" src="images/icon_next.png" alt="heart">
+            <span class="font-normal text-base pl-52 text-gray-400">Comedy</span>
+          </p>
+        </a>
+      </div>
+
+      <!-- Cursed Princess Club -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/cursed.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-yellow-400 pl-4 pt-4">Comedy</p>
+          <p class="text-lg inline-block text-black pl-4 ">Cursed Princess Club</p>
+          <p class="font-thin text-black text-sm pl-4">LambCat</p><br>
+        </a>
+      </div>
+
+      <!-- Boyfriend of the Dead -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/boyfriend.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-yellow-400 pl-4 pt-4">Comedy</p>
+          <p class="text-lg inline-block text-black pl-4 ">Boyfriend of the Dead</p>
+          <p class="font-thin text-black text-sm pl-4">Ushio</p><br>
+        </a>
+      </div>
+
+      <!-- Not So Shoujo Love Story -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/notSo.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-yellow-400 pl-4 pt-4">Comedy</p>
+          <p class="text-lg inline-block text-black pl-4 ">Not So Shoujo Love Story</p>
+          <p class="font-thin text-black text-sm pl-4">Curryuku</p><br>
+        </a>
+      </div>
+
+      <!-- Adventures of God -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/adventures.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-yellow-400 pl-4 pt-4">Comedy</p>
+          <p class="text-lg inline-block text-black pl-4 ">Adventures of God</p>
+          <p class="font-thin text-black text-sm pl-4">Teo / Corey</p><br>
+        </a>
+      </div>
+
+      <!-- Safely Endangere -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/safely.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-yellow-400 pl-4 pt-4">Comedy</p>
+          <p class="text-lg inline-block text-black pl-4 ">Safely Endangere</p>
+          <p class="font-thin text-black text-sm pl-4">Chris McCoy</p><br>
+        </a>
+      </div>
+
+    </div>
+
+
+    <!-- Line List 2-->
+    <div class="pt-12 inline-block pl-24">
+
+      <!-- Most Popular by Age Group -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100 pb-4">
+        <a href="#" class="flex justify-center mx-0">
+          <p class="font-medium text-xl">Most Popular by Age Group
+            <img class="h-4 w-4 inline-block" src="images/icon_next.png" alt="heart">
+            <span class="font-normal text-base pl-52 text-gray-400">Males in 30's</span>
+          </p>
+        </a>
+      </div>
+
+      <!-- Down To Earth -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/down.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-pink-500 pl-4 pt-4">Romance</p>
+          <p class="text-lg inline-block text-black pl-4 ">Down To Earth</p>
+          <p class="font-thin text-black text-sm pl-4">Pookie Senpai</p><br>
+        </a>
+      </div>
+
+      <!-- Cursed Princess Club -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/cursed.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-yellow-400 pl-4 pt-4">Comedy</p>
+          <p class="text-lg inline-block text-black pl-4 ">Cursed Princess Club</p>
+          <p class="font-thin text-black text-sm pl-4">LambCat</p><br>
+        </a>
+      </div>
+
+      <!-- Unholy Bloodb -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/unholy.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-purple-700 pl-4 pt-4">Supernatural</p>
+          <p class="text-lg inline-block text-black pl-4 ">Unholy Bloodb</p>
+          <p class="font-thin text-black text-sm pl-4">Lina Im / Jeonghyeon Kim</p><br>
+        </a>
+      </div>
+
+      <!-- Suitor Armor -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/suitor.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-purple-700 pl-4 pt-4">Fantasy</p>
+          <p class="text-lg inline-block text-black pl-4 ">Suitor Armor</p>
+          <p class="font-thin text-black text-sm pl-4">Purpah</p><br>
+        </a>
+      </div>
+
+      <!-- The Advenced Player of the Tutorial -->
+      <div class="border-b-2 border-fuchsia-600 border-gray-100">
+        <a href="#" class="inline-block">
+          <div class="w-24 h-24" style="background: url('images/theAdvanced.png')"></div>
+        </a>
+        <a href="#" class="inline-block">
+          <p class="font-normal text-sm text-purple-700 pl-4 pt-4">Fantasy</p>
+          <p class="text-lg inline-block text-black pl-4 ">The Advenced Player of the Tutorial To..</p>
+          <p class="font-thin text-black text-sm pl-4">Bangguseok Gimssi / Omagam</p><br>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Notice -->
+  <div class="bg-gray-100 border-b-2 border-fuchsia-600 border-gray-200 pb-5">
+    <span class="ml-20 text-lg inline-block text-black pl-4 pt-5">
+      Notice
+      <img class="h-4 w-4 inline-block" src="images/icon_next.png" alt="heart">
+    </span>
+    <span class="text-lg inline-block text-black font-thin pl-4 pt-5">
+      WEBTOON CANVAS Creator Rewards for December
+    </span>
+    <span class="text-sm inline-block text-gray-400 font-thin pl-4 pt-6">
+      Jan 29, 2021
+    </span>
+  </div>
+
+
+  <!-- Download WEBTOON now! -->
+  <div class="bg-gray-100 border-b-2 border-fuchsia-600 border-gray-200 pb-5">
+    <div class="flex justify-center text-lg text-black pt-5">
+      Download WEBTOON now!
+    </div>
+    <div class="flex justify-center">
+      <a href="#">
+        <img class="h-24 w-40 inline-block flex justify-center" src="images/googlrPlay.png" alt="Google Play">
+      </a>
+      <a href="#" class="pt-5 pl-5">
+        <img class="h-18 w-40 inline-block flex justify-center" src="images/app.png" alt="App Store">
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- Social Media -->
+  <div class="bg-gray-100 pb-7">
+
+    <div class="flex justify-center">
+      <a href="#" class="pt-5">
+        <img class="h-5 w-5 inline-block" src="images/facebook.png" alt="Google Play">
+      </a>
+      <a href="#" class="pt-5 pl-5">
+        <img class="h-5 w-5 inline-block" src="images/instagram.jpg" alt="App Store">
+      </a>
+      <a href="#" class="pt-5 pl-5">
+        <img class="h-5 w-5 inline-block" src="images/twitter.jpg" alt="App Store">
+      </a>
+      <a href="#" class="pt-5 pl-5">
+        <img class="h-6 w-10 inline-block" src="images/youtube.png" alt="App Store">
+      </a>
+    </div>
+
+    <!-- Contact -->
+    <div class="flex justify-center pt-5">
+      <div class="font-thin border-r-2 border-fuchsia-600 border-gray-200 pr-4">
+        <a href="#">About</a>
+      </div>
+      <div class="font-thin border-r-2 border-fuchsia-600 border-gray-200 px-4">
+        <a href="#">Feedback</a>
+      </div>
+      <div class="font-thin border-r-2 border-fuchsia-600 border-gray-200 px-4">
+        <a href="#">Help</a>
+      </div>
+      <div class="font-thin border-r-2 border-fuchsia-600 border-gray-200 px-4">
+        <a href="#">Terms</a>
+      </div>
+      <div class="font-thin border-r-2 border-fuchsia-600 border-gray-200 px-4">
+        <a href="#">Privacy</a>
+      </div>
+      <div class="px-4">
+        <a href="#"
+          class="text-gray-400 font-light text-sm rounded-full border border-fuchsia-600 border-gray-400 pl-4  py-2">
+          English
+          <span class="pl-8 pr-4">
+            <img class="h-2 w-2 inline-block opacity-50" src="images/button_list.png"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- WEBTOON Entertainment Inc -->
+    <div class="flex justify-center pt-5">
+      <p class="text-gray-400 font-thin text-sm">
+        © WEBTOON Entertainment Inc.
+      </p>
+    </div>
+
+    <!-- Webtoon images -->
+    <div class="flex justify-center pt-5">
+      <img class="h-10 w-28 opacity-90" src="images/webtoon.jpeg">
+    </div>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>

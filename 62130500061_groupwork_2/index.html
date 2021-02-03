@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vue Js - HelloWorld App</title>
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript'
+        src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js%27%3E'></script>
+    <script type='text/javascript'></script>
+    <link rel="stylrsheet" href="style.css">
+</head>
+
+<body oncontextmenu='return false' class='snippet-body'>
+    <div class="page-content page-container mt-5" id="page-content">
+        <div class="padding">
+            <div class="row container d-flex justify-content-center" id="app">
+                <div class="col-md-5">
+                    <div class="card flex justify-center">
+                        <div class="card-body text-center">
+                            <div class="flex justify-center pb-2">
+                                <img v-bind:src="img" class="rounded-full" width="100">
+                            </div>
+                            <h4>{{firstname}} {{lastname}}</h4>
+                            <p class="text-muted mb-0">{{career}}</p>
+
+                            <p class="mt-2 text-sm"> {{bio}}</p> <a href="https://www.instagram.com/mukpch/" class="btn btn-info btn-sm mt-3 mb-4">Follow</a>
+                            <div class="border-top pt-3">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <h6>{{post}}</h6>
+                                        <p>Post</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h6>{{follower}}</h6>
+                                        <p>Followers</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h6>{{likes}}</h6>
+                                        <p>Likes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>
